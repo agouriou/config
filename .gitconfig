@@ -1,0 +1,30 @@
+[credential]
+	helper = cache --timeout=3600
+[core]
+	editor = vim
+	autocrlf = input
+[push]
+	default = simple
+[alias]
+	gloga = log --graph --oneline --decorate --all
+	glog = log --graph --oneline --decorate
+	co = checkout
+	ci = commit
+	st = status
+	showfiles = diff-tree --name-only -r
+
+[diff]
+    tool = kdiff3
+ 
+[merge]
+    tool = kdiff3
+ 
+[mergetool "kdiff3"]
+    keepBackup = false
+    trustExitCode = false
+ 
+[difftool "kdiff3"]
+    keepBackup = false
+    trustExitCode = false
+[pull]
+	rebase = true
